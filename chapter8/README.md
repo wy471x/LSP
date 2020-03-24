@@ -1,1 +1,1 @@
-Chapter 7. File and Directory Management
+Chapter 8. File and Directory Management
