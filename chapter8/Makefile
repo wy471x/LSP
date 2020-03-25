@@ -1,4 +1,4 @@
-EXE=sample-stat sample-stat-2 is-on-physical-device sample-chmod sample-fchmod sample-chown sample-fchown sample-getcwd sample-get-current-dir-name sample-chdir sample-fchdir sample-find-file-in-dir sample-link sample-symlink
+EXE=sample-stat sample-stat-2 is-on-physical-device sample-chmod sample-fchmod sample-chown sample-fchown sample-getcwd sample-get-current-dir-name sample-chdir sample-fchdir sample-find-file-in-dir sample-link sample-symlink sample-ioctl sample-inotify
 CC=gcc
 all : $(EXE)
 
@@ -29,6 +29,10 @@ sample-find-file-in-dir : sample-find-file-in-dir.c
 sample-link : sample-link.c
 	$(CC) -o $@ $^
 sample-symlink : sample-symlink.c
+	$(CC) -o $@ $^
+sample-ioctl : sample-ioctl.c
+	$(CC) -o $@ $^
+sample-inotify : sample-inotify.c
 	$(CC) -o $@ $^
 
 clean : 
