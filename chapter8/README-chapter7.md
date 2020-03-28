@@ -1,1 +1,1 @@
-chapter7 thread
+chapter 7. Thread
